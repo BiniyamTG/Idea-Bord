@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* IdeaBoard Design System - Minimalistic with yellow/neon accents
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 222 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 15% 15%;
+
+    /* Vibrant yellow/amber primary for innovation theme */
+    --primary: 45 95% 55%;
+    --primary-foreground: 222 15% 15%;
+    
+    /* Subtle gray secondary */
+    --secondary: 220 8% 96%;
+    --secondary-foreground: 222 15% 15%;
+
+    --muted: 220 8% 96%;
+    --muted-foreground: 222 8% 55%;
+
+    /* Yellow accent for highlights */
+    --accent: 45 95% 55%;
+    --accent-foreground: 222 15% 15%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 45 95% 55%;
+    
+    /* Custom design tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(45 95% 55%), hsl(38 92% 50%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(220 8% 98%));
+    --gradient-neon: linear-gradient(135deg, hsl(45 95% 55% / 0.1), hsl(38 92% 50% / 0.05));
+    
+    --shadow-soft: 0 2px 8px hsl(222 15% 15% / 0.08);
+    --shadow-strong: 0 8px 32px hsl(222 15% 15% / 0.12);
+    --shadow-glow: 0 0 20px hsl(45 95% 55% / 0.3);
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222 25% 8%;
+    --foreground: 220 8% 95%;
+
+    --card: 222 20% 10%;
+    --card-foreground: 220 8% 95%;
+
+    --popover: 222 20% 10%;
+    --popover-foreground: 220 8% 95%;
+
+    --primary: 45 95% 55%;
+    --primary-foreground: 222 25% 8%;
+
+    --secondary: 222 15% 15%;
+    --secondary-foreground: 220 8% 95%;
+
+    --muted: 222 15% 15%;
+    --muted-foreground: 220 8% 65%;
+
+    --accent: 45 95% 55%;
+    --accent-foreground: 222 25% 8%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 220 8% 95%;
+
+    --border: 222 15% 18%;
+    --input: 222 15% 18%;
+    --ring: 45 95% 55%;
+    
+    /* Dark mode custom tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(45 95% 55%), hsl(38 92% 50%));
+    --gradient-subtle: linear-gradient(180deg, hsl(222 20% 10%), hsl(222 25% 8%));
+    --gradient-neon: linear-gradient(135deg, hsl(45 95% 55% / 0.15), hsl(38 92% 50% / 0.08));
+    
+    --shadow-soft: 0 2px 8px hsl(222 25% 5% / 0.3);
+    --shadow-strong: 0 8px 32px hsl(222 25% 5% / 0.5);
+    --shadow-glow: 0 0 30px hsl(45 95% 55% / 0.4);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
