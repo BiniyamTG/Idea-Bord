@@ -1,4 +1,4 @@
-🌟 IdeaShare
+🌟 Idea-Bord
 
 IdeaShare is a modern, community-driven platform where creativity meets collaboration. Users can post, share, and explore innovative ideas, connect with like-minded creators, and turn concepts into reality.
 
@@ -16,10 +16,10 @@ Backend API Integration: All data is managed seamlessly through a RESTful backen
 
 🛠 Technology Stack
 
-Frontend: React.js, HTML5, CSS3, JavaScript
+Frontend: TypeScript
 
-Backend: FastAPI / Node.js (depending on your choice)
+Backend: FastAPI 
 
-Database: MongoDB / PostgreSQL
+Database: MongoDB 
 
-Authentication: JWT / OAuth (if implemented)
+Authentication: JWT 
